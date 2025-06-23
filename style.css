@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #020024, #090979, #00d4ff);
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header with full-screen cover background */
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url('cover.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #fff;
+  box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+}
+
+/* Logo container centered on top of cover */
+.logo-container {
+  text-align: center;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.logo {
+  max-width: 120px;
+  border-radius: 50%;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 10px #ffd700;
+  animation: rotateLogo 8s linear infinite;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 3px #000;
+}
+
+main {
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  color: #ffcc00;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.speech {
+  font-size: 1.1rem;
+  color: #f0f0f0;
+}
+
+.signature {
+  margin-top: 1rem;
+  font-style: italic;
+  text-align: right;
+  color: #ffd700;
+}
+
+/* Coordinator Photo */
+.coordinator-photo {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 1rem;
+}
+
+.coordinator-photo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f4ee53;
+  box-shadow: 0 0 10px #efe341;
+}
+
+/* Members Section */
+.members {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.team-section {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid #ffdd00;
+  box-shadow: 0 0 10px #ff0;
+}
+
+.team-section h3 {
+  margin-bottom: 1rem;
+  color: #fff500;
+}
+
+.team-section h3 {
+    margin-bottom: 1rem;
+    color: #fff500;
+}
+
+.team-section h3 {
+    margin-bottom: 2rem;
+    color: #fff500;
+}
+
+.team-section h3 {
+    margin-bottom: 2rem;
+    color: #fff500;
+}
+
+.member {
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: background 0.3s;
+}
+
+.member-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member-summary span {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.member-summary button {
+  padding: 5px 10px;
+  border: none;
+  background: #ffcc00;
+  color: #000;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.member-summary button:hover {
+  background: #ffd700;
+}
+
+.member-details {
+  margin-top: 0.8rem;
+  display: none;
+  line-height: 1.4;
+  padding-left: 0.5rem;
+  color: #f5f5f5;
+  font-size: 0.95rem;
+  animation: fadeIn 0.3s ease;
+  border-left: 3px solid #ffcc00;
+  padding-left: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+
